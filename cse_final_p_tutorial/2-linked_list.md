@@ -147,39 +147,3 @@ With a linked list you can create lists with your favorit songs to listen in you
 With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify linked list and personalazy it. Therefore, you should be able to solve a problem with a linked list, let's suppose you have a spotify list and you want to add some bands that you like and you also want to take away bands that you don't like from the list, so you need to creat a liked list with all your current favorite bands and print them on the console, and then you clean that list by taking out the bands that you do not like anymore and print them in the console.
 ## sample solution:
 [solution](linked_list_solution/Program.cs)
-```csharp
-using System;
-using System.Collections.Generic;
- 
-class Program {
- 
-    static public void Main()
-    {
-        LinkedList<string> bandList = new LinkedList<string>();
-        LinkedListNode<string> slipknotNode= bandList.AddFirst("Slipknot");
-        LinkedListNode<string> skilletNode= bandList.AddFirst("Skillet");
-        LinkedListNode<string> btsNode= bandList.AddFirst("BTS");
-        LinkedListNode<string> metallicaNode = bandList.AddLast("Metallica");
-        LinkedListNode<string> onedirectionNode= bandList.AddLast("One Direction");
-        bandList.AddAfter(metallicaNode, "Aerosmith");
-        bandList.AddAfter(metallicaNode, "Restart");
-        bandList.AddBefore(slipknotNode, "Iron Maiden");
-        bandList.AddBefore(slipknotNode, "AC/DC");
-        Console.WriteLine("unclean band list:"); 
-        Print(bandList);
-        bandList.Remove("Restart");
-        bandList.RemoveFirst();
-        bandList.RemoveLast();
-        Console.WriteLine("cleaned band list:");
-        Print(bandList);
-    }
-    private static void Print(LinkedList<string> bandList)
-    { 
-        foreach (var node in bandList)
-        {
-            Console.Write(node + ", ");
-        }
-        Console.WriteLine("\n");        
-    }
-}
-```
