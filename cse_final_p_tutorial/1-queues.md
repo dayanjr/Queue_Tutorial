@@ -2,7 +2,7 @@
 
 Queues in c# are a simple data structure class that follows a basic system of first in and first out principle, as shown below:
 
-![guess_design](C:\Users\h_linford0410\Dropbox\PC\Desktop\cse_final_p_tutorial\Screenshot (328).png)
+![guess_design](Screenshot.png)
 
 But if someone wants to effectivily use this data structure, it must first understand the three major methods of handling the item elements inside the queue.
 ## Creating Queues

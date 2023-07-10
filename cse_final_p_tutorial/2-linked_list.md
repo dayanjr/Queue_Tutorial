@@ -2,7 +2,7 @@
 
 linked lists in c# are linear data structures, in which the elements are not stored at contiguous memory locations. The elements in linked lists are linked by using pointers as the image shows:
 
-![guess_design](C:\Users\h_linford0410\Dropbox\PC\Desktop\cse_final_p_tutorial\Screenshot (328).png)
+![guess_design](Screenshot2.png)
 
 Therefore, linked lists have nodes that contains data fields, and each node is connected with the next node in the list.
 ## Creating and Manipulating Linked List
@@ -142,6 +142,6 @@ class Program {
 }
 ```
 ## Exemple: Spotify
-With queues you can create lists with your favorit songs to listen in your phone, with the enqueue() method you can add to the queue your favorit songs and with the dequeue() method you can remove songs, and with Peek() method you can print them in the console.
+With a linked list you can create lists with your favorit songs to listen in your phone, so with all the methods listed in demostrated in this tutorial you are capable of creating your own spotify list.
 ## Problem to solve: Create a Spotify Queue
-With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify queue.
+With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify linked list.
