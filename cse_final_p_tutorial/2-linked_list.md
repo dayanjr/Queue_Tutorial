@@ -146,6 +146,7 @@ With a linked list you can create lists with your favorit songs to listen in you
 ## Problem to solve: Create a Spotify Queue
 With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify linked list and personalazy it. Therefore, you should be able to solve a problem with a linked list, let's suppose you have a spotify list and you want to add some bands that you like and you also want to take away bands that you don't like from the list, so you need to creat a liked list with all your current favorite bands and print them on the console, and then you clean that list by taking out the bands that you do not like anymore and print them in the console.
 ## sample solution:
+[solution](linked_list_solution/Program.cs)
 ```csharp
 using System;
 using System.Collections.Generic;
