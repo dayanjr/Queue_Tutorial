@@ -73,7 +73,7 @@ class Program
         bands.Enqueue("AC/DC");
 
        // removes element from the beginning of the bands queue 
-        var removedElement = colors.Dequeue();
+        var removedElement = bands.Dequeue();
 
         Console.WriteLine("Removed Element: " + removedElement);
     }
@@ -101,7 +101,7 @@ class Program
         bands.Enqueue("AC/DC");
 
       // it only returns elements from the beginning of the bands queue
-        Console.WriteLine("Element at beginning of queue: " + planet.Peek());
+        Console.WriteLine("Element at beginning of queue: " + bands.Peek());
     }
 }
 
@@ -109,4 +109,25 @@ class Program
 ## Exemple: Spotify
 With queues you can create lists with your favorit songs to listen in your phone, with the enqueue() method you can add to the queue your favorit songs and with the dequeue() method you can remove songs, and with Peek() method you can print them in the console.
 ## Problem to solve: Create a Spotify Queue
-With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify queue.
+With all the knowledge that you learn in this tutorial, you are ready to create your personal spotify queue, and  after you create you will need to remove the first item in your queue and display it, and after that you should the display the new first item in your queue.
+## sample solution:
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    public static void Main()
+    {
+        Queue<string> bands = new Queue<string>();
+        bands.Enqueue("BTS");
+        bands.Enqueue("AC/DC");
+        bands.Enqueue("Metallica");
+        bands.Enqueue("Slipknot");
+        var removedElement = bands.Dequeue();
+        Console.WriteLine("Element removed from queue: " + removedElement);
+        Console.WriteLine("Element at beginning of queue: " + bands.Peek());
+    }
+}
+
+```
